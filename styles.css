@@ -1,0 +1,28 @@
+body {
+  background-color: #1e3a8a; /* bg-blue1 equivalent */
+  color: white;
+}
+
+header {
+  padding: 2rem 10%; /* px-[10%] and mt-4 equivalent */
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15%;
+}
+
+nav img {
+  width: 9rem; /* w-36 equivalent */
+}
+
+article > p:first-child {
+  color: #d1d5db; /* text-gray-700 equivalent */
+  font-weight: bold;
+  font-size: 2rem; /* text-4xl equivalent */
+}
+
+/* ... and so on for the rest of the elements */
