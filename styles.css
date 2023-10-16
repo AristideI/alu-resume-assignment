@@ -506,10 +506,47 @@ a:hover {
 
 /* Contact */
 
-#contact > p {
+#contact > p:first-child {
   font-size: 2rem;
   color: white;
   font-weight: bold;
   text-align: center;
   margin: 5rem 0 3rem 0;
+}
+
+#contact > section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid white;
+}
+
+.soc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid white;
+  width: fit-content;
+  padding: 0 1rem;
+  border-radius: 8px;
+}
+.soc-img {
+  width: 2rem;
+}
+.soc-tit {
+  color: white;
+  font-weight: bold;
+}
+
+.codewars {
+  filter: invert(100%);
+}
+
+#contact > p:last-child {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
 }
