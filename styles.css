@@ -36,6 +36,7 @@ body {
   padding: 4px 10%;
   font-family: Georgia, "Times New Roman", Times, serif;
   overflow-x: hidden;
+  position: relative;
 }
 
 header {
@@ -102,6 +103,11 @@ a:hover {
   color: white;
   background-image: linear-gradient(to right, #2c3e50, var(--blue2));
 }
+
+.menu img {
+  display: none;
+  width: 2rem;
+}
 /* Hero responsive */
 
 @media only screen and (max-width: 800px) {
@@ -138,6 +144,10 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .menu img {
+    display: block;
+    cursor: pointer;
   }
 }
 
@@ -549,4 +559,68 @@ a:hover {
   font-weight: bold;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
+}
+
+@media only screen and (max-width: 800px) {
+  #contact > section {
+    flex-wrap: wrap;
+    gap: 1rem 0;
+  }
+
+  .soc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid white;
+    width: 40%;
+    padding: 0 1rem;
+    border-radius: 8px;
+  }
+  .soc-img {
+    width: 2rem;
+  }
+  .soc-tit {
+    color: white;
+    font-weight: bold;
+  }
+
+  .codewars {
+    filter: invert(100%);
+  }
+
+  #contact > p:last-child {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+  }
+}
+
+/* Menu Options */
+
+.display {
+  display: flex;
+}
+.no-display {
+  display: none;
+}
+.menu-options {
+  width: 70%;
+  background-color: var(--purple1);
+  position: absolute;
+  top: 5rem;
+  left: 15%;
+  border-radius: 20px;
+  padding: 5px 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-options a {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word;
 }
