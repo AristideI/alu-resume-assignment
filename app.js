@@ -8,9 +8,9 @@ menuIcon.addEventListener("click", () => {
   menuOptions.classList.toggle("display");
   menuOptions.classList.toggle("no-display");
   if (checker) {
-    menuIcon.src = "/img/cross.png";
+    menuIcon.src = "./img/cross.png";
   } else {
-    menuIcon.src = "/img/menu.png";
+    menuIcon.src = "./img/menu.png";
   }
 });
 
