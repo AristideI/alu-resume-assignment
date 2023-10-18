@@ -104,8 +104,11 @@ a:hover {
   background-image: linear-gradient(to right, #2c3e50, var(--blue2));
 }
 
-.menu img {
+.menu {
   display: none;
+}
+
+.menu img {
   width: 2rem;
 }
 /* Hero responsive */
@@ -145,7 +148,7 @@ a:hover {
     justify-content: center;
     align-items: center;
   }
-  .menu img {
+  .menu {
     display: block;
     cursor: pointer;
   }
@@ -622,5 +625,4 @@ a:hover {
   width: 100%;
   padding: 10px;
   text-align: center;
-  word-wrap: break-word;
 }

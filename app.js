@@ -1,3 +1,4 @@
+let menuSec = document.querySelector(".menu");
 let menuIcon = document.querySelector(".menu-icon");
 let menuOptions = document.querySelector(".menu-options");
 let menuAnchor = document.querySelectorAll(".menu-options a");
